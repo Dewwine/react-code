@@ -4,11 +4,12 @@ import s from './Header.module.css';
 const Header = () => {
   return (
     <header className={s.header}>
-      <div className={s.menu}>
+      <label for="check" className={s.menu}>
+        <input type="checkbox" id="check" /> 
         <span className={s.item}></span>
         <span className={s.item}></span>
         <span className={s.item}></span>
-      </div>
+      </label>
       <div className={s.search}>
         <form action="" className={s.search_form}>
           <div className="" className={s.search_input}>
@@ -19,9 +20,9 @@ const Header = () => {
           </button>
         </form>
       </div>
-      <div className={s.logo}>
+      <a href="/" className={s.logo}>
         <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.romanwhite.ru%2Fphoto%2F52frames2018%2Fthumbs%2Fthumbs_img61756w.jpg&f=1&nofb=1' alt='' />
-      </div>
+      </a>
       <div className={s.log_reg}>
         <a href="#" className={s.btn}>Login</a>
         <a href="#" className={s.btn}>Register</a>
