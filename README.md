@@ -1,2 +1,2 @@
-# React-code
+# react-code
 Website for pictures
