@@ -7,7 +7,7 @@
 }
 
 .header .logo {
-  display: flex;  
+  display: flex;
   justify-content: center;
   width: 100%;
 }
@@ -35,7 +35,7 @@
 }
 
 .search {
-
+                          /*????????????????*/
 }
 .search_form {
   position: relative;
@@ -62,17 +62,18 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
-  padding: 5px 5px;
-  position: absolute;
+  padding: 5px 5px -0.1%;
+  position: absolute; /*наследуется от .search_form выше*/
   top: 0px;
   right: 0px;
+  height: 100%;
   /* width: 5px; */
   /* height: 5px; */
 }
 .search_button .search_svg {
   /* color: red; */
-  height: 13px;
-  width: 14px;
+  height: 13px; /*картинка в строке поиска*/
+  width: 14px;  /*не троготь*/
   outline: none;
 }
 
@@ -83,8 +84,8 @@
 .log_reg .btn{
   text-decoration: none;
   color: #fff;
-  margin-right: 20px;
-  padding: 5px 15px 5px 15px;
+  margin-right: 20px;           /*вот эта херь*/
+  padding: 5px 15px 5px 15px;   /*вообще хз как работает*/
   border: 2px solid wheat;
   border-radius: 13px;
   transition: .2s;
