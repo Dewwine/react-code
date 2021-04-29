@@ -14,6 +14,11 @@
     padding-right: 15px;
     padding-left: 15px;
     color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+.contacts .items:hover {
+  color: wheat;
 }
 .contacts {
     display: flex;
